@@ -7,7 +7,7 @@ export default class LinkedList<T> {
     private length: number;
 
     constructor(value: T) {
-        const newNode = new Node(value);
+        const newNode = new Node(value, null);
         this.head = newNode;
         this.tail = this.head;
         this.length = 1;
